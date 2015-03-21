@@ -1,0 +1,100 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:context="com.example.questrush.questrush.Activity_SignUp">
+
+    <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/sign_logo_h"
+            android:id="@+id/signup_logo"
+            android:src="@drawable/header_signup"
+            android:scaleType="centerCrop"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"/>
+
+    <EditText
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/edit_text_h"
+            android:gravity="center|bottom"
+            android:layout_marginLeft="@dimen/edit_text_margin_lr"
+            android:layout_marginRight="@dimen/edit_text_margin_lr"
+
+            android:inputType="textPersonName"
+            android:hint="@string/sign_up_enter_name"
+            android:ems="10"
+            android:id="@+id/newName"
+            android:layout_below="@+id/signup_logo"
+            android:layout_alignParentStart="true">
+
+        <requestFocus/>
+    </EditText>
+
+    <EditText
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/edit_text_h"
+            android:gravity="center|bottom"
+            android:layout_marginLeft="@dimen/edit_text_margin_lr"
+            android:layout_marginRight="@dimen/edit_text_margin_lr"
+
+            android:inputType="textEmailAddress"
+            android:hint="@string/sign_up_enter_email"
+            android:ems="10"
+            android:id="@+id/newEmail"
+            android:layout_below="@id/newName"
+            android:layout_alignParentStart="true"/>
+
+    <EditText
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/edit_text_h"
+            android:gravity="center|bottom"
+            android:layout_marginLeft="@dimen/edit_text_margin_lr"
+            android:layout_marginRight="@dimen/edit_text_margin_lr"
+
+            android:inputType="textPassword"
+            android:hint="@string/sign_up_password"
+            android:ems="10"
+            android:id="@+id/newPass1"
+            android:layout_below="@id/newEmail"
+            android:layout_alignParentStart="true"/>
+
+    <EditText
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/edit_text_h"
+            android:gravity="center|bottom"
+            android:layout_marginLeft="@dimen/edit_text_margin_lr"
+            android:layout_marginRight="@dimen/edit_text_margin_lr"
+
+            android:inputType="textPassword"
+            android:hint="@string/sign_up_password"
+            android:ems="10"
+            android:id="@+id/newPass2"
+            android:layout_below="@id/newPass1"
+            android:layout_alignParentStart="true"/>
+
+    <com.gc.materialdesign.views.ButtonRectangle
+            android:text="@string/sign_up_cancel"
+            android:id="@+id/cancel"
+            android:onClick="cancel"
+            android:layout_width="@dimen/button_w"
+            android:layout_height="@dimen/button_h"
+            android:background="@color/button_color"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="@dimen/button_margin_lr"
+            android:layout_below="@+id/newPass2"
+            android:layout_alignParentStart="true"
+            />
+
+    <com.gc.materialdesign.views.ButtonRectangle
+            android:text="@string/sign_up_create"
+            android:onClick="create"
+            android:id="@+id/create"
+            android:layout_width="@dimen/button_w"
+            android:layout_height="@dimen/button_h"
+            android:background="@color/button_color"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="@dimen/button_margin_lr"
+            android:layout_below="@id/newPass2"
+            android:layout_alignParentEnd="true"/>
+
+</RelativeLayout>

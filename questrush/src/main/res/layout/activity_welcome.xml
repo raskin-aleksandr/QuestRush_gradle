@@ -1,0 +1,35 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/bg_welcome"
+                tools:context=".welcome">
+
+
+    <com.gc.materialdesign.views.ButtonRectangle
+            android:id="@+id/logWithExisting"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/button_h"
+            android:background="@color/button_color"
+            android:layout_marginTop="250dp"
+            android:layout_marginStart="@dimen/button_margin_lr"
+            android:layout_marginEnd="@dimen/button_margin_lr"
+            android:text="@string/main_login_with"
+            android:onClick="login"
+            />
+
+    <com.gc.materialdesign.views.ButtonRectangle
+            android:id="@+id/createNewAccount"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/button_h"
+            android:layout_marginStart="@dimen/button_margin_lr"
+            android:layout_marginEnd="@dimen/button_margin_lr"
+            android:layout_marginTop="20dp"
+            android:text="@string/main_create_new"
+            android:layout_below="@+id/logWithExisting"
+            android:background="@color/button_color"
+            android:textColor="@color/sign_button_text_color"
+            android:onClick="createNew"
+            />
+
+</RelativeLayout>

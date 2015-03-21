@@ -1,0 +1,67 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:context="com.example.questrush.questrush.Activity_Login">
+
+    <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/sign_logo_h"
+            android:id="@+id/signin_logo"
+            android:src="@drawable/header_signin"
+            android:scaleType="centerCrop"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"/>
+
+    <EditText
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/edit_text_h"
+            android:gravity="center|bottom"
+            android:layout_marginLeft="@dimen/edit_text_margin_lr"
+            android:layout_marginRight="@dimen/edit_text_margin_lr"
+            android:inputType="textPersonName"
+            android:hint="@string/login_enter_login"
+            android:ems="10"
+            android:id="@+id/loginName"
+            android:layout_below="@+id/signin_logo"
+            android:layout_alignParentStart="true">
+
+    </EditText>
+
+    <EditText
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/edit_text_h"
+            android:gravity="center|bottom"
+            android:layout_marginLeft="@dimen/edit_text_margin_lr"
+            android:layout_marginRight="@dimen/edit_text_margin_lr"
+            android:id="@+id/loginPassword"
+            android:layout_below="@+id/loginName"
+            android:ems="10"
+            android:hint="@string/login_enter_password"
+            android:inputType="textPassword"/>
+
+    <com.gc.materialdesign.views.ButtonRectangle
+            android:id="@+id/loginButton"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/button_h"
+            android:background="@color/button_color"
+            android:layout_marginTop="30dp"
+            android:layout_marginStart="@dimen/button_margin_lr"
+            android:layout_marginEnd="@dimen/button_margin_lr"
+            android:text="@string/login_login_button"
+            android:layout_below="@+id/loginPassword"
+            />
+
+    <com.gc.materialdesign.views.ButtonRectangle
+            android:id="@+id/resetButton"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/button_h"
+            android:background="@color/button_color"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="@dimen/button_margin_lr"
+            android:layout_marginEnd="@dimen/button_margin_lr"
+            android:text="@string/login_reset_pass"
+            android:layout_below="@+id/loginButton"
+            />
+
+</RelativeLayout>

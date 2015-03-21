@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/QuestRush_gradle.iml" filepath="$PROJECT_DIR$/QuestRush_gradle.iml" />
+      <module fileurl="file://$PROJECT_DIR$/questrush/questrush.iml" filepath="$PROJECT_DIR$/questrush/questrush.iml" />
+    </modules>
+  </component>
+</project>

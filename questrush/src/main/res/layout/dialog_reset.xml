@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_popup"
+        android:orientation="vertical">
+
+    <EditText
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/edit_text_h"
+            android:gravity="center|bottom"
+            android:layout_marginLeft="@dimen/edit_text_margin_lr"
+            android:layout_marginRight="@dimen/edit_text_margin_lr"
+            android:id="@+id/reset"
+            android:ems="10"
+            android:hint="@string/reset_email"
+            android:inputType="textEmailAddress"/>
+
+    <com.gc.materialdesign.views.ButtonRectangle
+            android:id="@+id/resetSend"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/button_color"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="@dimen/button_margin_lr"
+            android:layout_marginEnd="@dimen/button_margin_lr"
+            android:text="@string/reset_send"
+            android:layout_below="@+id/reset"
+            />
+
+</LinearLayout>
